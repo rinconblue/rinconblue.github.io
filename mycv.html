@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Wolfgana-MyCV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* Add extra padding and ensure everything is centered */
+      #content {
+        padding: 40px 0;
+      }
+
+      /* Center text inside sections */
+      .text-center {
+        text-align: center;
+      }
+
+      /* Flexbox for centering content inside the container */
+      .pdf-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      embed {
+        max-width: 100%;  /* Make the embed responsive */
+        height: 800px;     /* Maintain aspect ratio */
+        border: none;     /* Remove border around the embed */
+      }
+    </style>
+  </head>
+  <body class="subpage">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <section id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Logo -->
+              <h1><a href="index.html" id="logo">Wolfy Wolfgang</a></h1>
+
+              <!-- Nav -->
+              <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="mycv.html">CV</a>
+                <a href="aboutme.html">About Me</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section id="content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+
+              <!-- Main Content -->
+              <section>
+                <header>
+                  <h2>Wolfy Wolfgang</h2>
+                  <a href="HW4sol.pdf" target="_blank">My CV</a>
+                  <h4>My PDF File</h4>
+
+                  <!-- Centered PDF Embed -->
+                  <div class="pdf-container">
+                    <embed src="HW4sol.pdf" type="application/pdf" width="600" height="600">
+                  </div>
+                </header>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
